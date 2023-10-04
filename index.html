@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleLogin.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <form>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Iniciar Sesión</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="border: 3px solid #f1f1f1;">
+                        <div class="container-login">
+                          <label for="user"><b>Usuario</b></label>
+                          <input id="user" runat="server" type="text" placeholder="Ingrese Usuario" name="user" autocomplete="off" required="required" />
+                          <label for="psw"><b>Contraseña</b></label>
+                          <input id="psw" runat="server" type="password" placeholder="Ingrese Contraseña" name="psw" autocomplete="off" required="required" />   
+                          <button type="submit" id="submit" runat="server" onserverclick="submit_ServerClick">Iniciar Sesión</button>
+                        </div>
+                        <div class="container-btnCancel" style="background-color:#f1f1f1">
+                          <button type="button" class="cancelbtn" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+        </form>
+    </section>
+    <section class="container-items">
+        <header class="head shadow-sm">
+            <div class="container-menu">
+                <div class="c-menu">
+                    <div href="index.html"><span class="l1 text-dark">Señal</span><span class="l2 text-dark">TV</span></div>
+                    <button class="btn btn-outline-primary" style="width: 150px; border-radius: 0px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesión</button>
+                </div> 
+              </div>
+        </header>
+        <main>
+            <div class="container-sms">
+                <h1>Señal TV</h1>
+                <h2>Empresa de televisión digital</h2>
+                <p>Conectividad sin límites, entretenimiento a tu medida y comunicación sin interrupciones, todo en uno. Descubre la experiencia definitiva con nuestros servicios de Internet ultrarrápido, una amplia selección de canales y llamadas ilimitadas. Tu hogar, tu elección, tu satisfacción</p>
+                <h2>Nuestros Servicios</h2>
+                <br>
+                <section class="container-service">
+                    <div class="chanel-service">
+                        <div class="circle">
+                            <i class="fa-solid fa-tower-broadcast fa-2xl"></i>
+                        </div>
+                        <br>
+                        <p>CANAL</p>
+                    </div>
+                    <div class="internet-service">
+                        <div class="circle">
+                            <i class="fa-brands fa-internet-explorer fa-2xl"></i>
+                        </div>
+                        <br>
+                        <p>INTERNET</p>
+                    </div>
+                    <div class="call-service">
+                        <div class="circle">
+                            <i class="fa-solid fa-phone fa-2xl"></i>
+                        </div>
+                        <br>
+                        <p>LLAMADA</p>
+                    </div>
+                    <div class="other-service">
+                        <div class="circle">
+                            <i class="fa-solid fa-ellipsis fa-2xl"></i>
+                        </div>
+                        <br>
+                        <p>MAS</p>
+                    </div>
+                </section>
+                <br>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
